@@ -13,18 +13,22 @@ Follow the below steps to run the demo.
 ```
 make libfun.so
 ```
+The shared library will be saved in `ctexample/library`.
+It is called from the Python function `fun(x)`
+defined in the module `ctexample.fun` (`ctexample/fun.py`).
 
 ## Installation of Python package
 
-Create virtual environment. Below example is using `venv`:
+Create a virtual environment. The below example uses `venv`:
 ```
 git clone https://github.com/krzysztofarendt/ctypes-example
 cd ctypes-example
 python3.10 -m venv venv
 source venv/bin/activate
 ```
+Other programs for virtual environments are e.g. `virtualenv`, `conda`.
 
-Install:
+Install the package:
 ```
 pip instal -e .
 ```
