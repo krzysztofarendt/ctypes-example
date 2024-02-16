@@ -4,10 +4,16 @@
 
 // Example program showing how the function fun() works
 int main() {
-    int x = 1;
-    int y = fun(x);
 
-    printf("y = %d\n", y);
+    struct Obj inp;
+    inp.x[0] = 1;
+    inp.x[1] = 5;
+    inp.x[2] = 10;
+    inp.y = 0;
+
+    fun(&inp);
+
+    printf("y = %d\n", inp.y);
 
     return 0;
 }
