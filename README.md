@@ -35,11 +35,13 @@ pip instal -e .
 
 ## Call C function from Python
 
-Run the below code within the Python interpreter
-or copy it to some Python script:
+Run the below module:
+```
+python ctexample/fun.py
+```
+
+or type the following in the Python console:
 ```python
 from ctexample import fun
-
-x = 2
-print(fun(x))  # Should print 4
+fun(5, 5, 20)  # (5 + 5 + 20) / 3 = 10
 ```
